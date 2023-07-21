@@ -12,6 +12,14 @@ getFullName(p2); // => 'Charlie Brown'
 
 function getFullName(person) {
   // Your code here
+  let result = [];
+  for(let key in person){
+    let value = person[key];
+    if(typeof value == "string"){
+        result.push(value)
+    }
+  }
+  return result.join(" ")
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
